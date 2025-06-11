@@ -11,7 +11,9 @@ const MainContainer = styled.div`
 
 const ContentContainer = styled.main`
     grid-area: content;
+    padding: 4.5rem;
     overflow-y: auto;
+    box-sizing: border-box;
 `;
 
 const MainLayout = ({children}:{children?:React.ReactNode}) => {
