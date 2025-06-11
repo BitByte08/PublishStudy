@@ -1,4 +1,4 @@
-import Sidebar from "@/components/layout/Sidebar";
+import Sidebar from "@/components/layout/Sidebar/index";
 import styled from "@emotion/styled";
 
 const MainContainer = styled.div`
