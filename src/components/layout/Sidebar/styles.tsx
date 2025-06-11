@@ -20,12 +20,14 @@ export const ChildLinkList = styled(RootLinkList)`
     gap: 1rem
 `;
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div<{Validation:string;}>`
     width: 100%;
     height: 3.5rem;
     display: flex;
     align-items: center;
     padding: .75rem;
     gap: .5rem;
+    border-radius: .5rem;
     box-sizing: border-box;
+    background-color: ${(props) => (props.Validation=="toggle"?"#FF9B621A":props.Validation=="login"?"#FAFAFA":"white")};
 `;
