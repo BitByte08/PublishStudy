@@ -14,6 +14,8 @@ const ContentContainer = styled.main`
     padding: 4.5rem;
     overflow-y: auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 `;
 
 const MainLayout = ({children}:{children?:React.ReactNode}) => {

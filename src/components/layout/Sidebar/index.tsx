@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {Container, RootLinkList, ChildLinkList, ButtonContainer} from "./styles"
+import {MainContainer, RootLinkList, ChildLinkList, ButtonContainer} from "./styles"
 
 type LinkButtonProps = {
     link: string,
@@ -19,7 +19,7 @@ const LinkButton = ({link, image, title, Validation}: LinkButtonProps) => {
 
 const Sidebar = () => {
     return (
-        <Container>
+        <MainContainer>
             <RootLinkList>
                 <LinkButton link={"/"} image={""} title={"로그인"} Validation={"login"} />
                 <ChildLinkList>
@@ -32,7 +32,7 @@ const Sidebar = () => {
                 </ChildLinkList>
             </RootLinkList>
             <LinkButton link={"/"} image={""} title={"설정"}/>
-        </Container>
+        </MainContainer>
     )
 }
 
