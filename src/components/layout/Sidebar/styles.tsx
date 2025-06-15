@@ -1,11 +1,15 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.aside`
+export const MainContainer = styled.aside`
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 4.5rem 2rem;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid #D1D1D1;
 `;
 
 export const RootLinkList = styled.nav`
@@ -29,5 +33,7 @@ export const ButtonContainer = styled.div<{Validation:string;}>`
     gap: .5rem;
     border-radius: .5rem;
     box-sizing: border-box;
-    background-color: ${(props) => (props.Validation=="toggle"?"#FF9B621A":props.Validation=="login"?"#FAFAFA":"white")};
+    background-color: ${(props) => 
+            (props.Validation=="toggle"?"#FF9B621A":
+                    props.Validation=="login"?"#FAFAFA":"white")};
 `;
